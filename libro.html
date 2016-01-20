@@ -1,0 +1,191 @@
+﻿<!doctype html>
+<!-- The ifs are for turnJS -->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<meta name="viewport" content="width = 1050, user-scalable = no" />-->
+    
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Libro de Test del Proyecto">
+    <meta name="author" content="Danielle Isquierdo & Tiago Ferreira">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Libro Test</title>
+
+	<!--Google fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Pacifico|Coming+Soon' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- TurnJS -->
+	<!--<script type="text/javascript" src="turnjs/extras/jquery.min.1.7.js"></script>-->
+	<script type="text/javascript" src="turnjs/extras/modernizr.2.5.3.min.js"></script>
+	<!--prettyPhoto-->
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prettyPhoto-custom.js" type="text/javascript" charset="utf-8"></script>
+	
+    <!-- Custom styles for this template -->
+	<!-- Do we need to load this here?? it's beeing loaded at the end of body -->
+    <link rel="stylesheet" href="css/style.css">
+	
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+<body>
+	<div class="flipbook-viewport">
+		<div class="container">
+			<div class="flipbook">
+				<div class="hard" style="background-image:url(img/covers/astronaut.jpg)"></div>
+				<div class="hard front-side"></div>
+				<div class="page">
+					<div class="page-content">
+						<div class="page-header">
+							<h1>Escribir</h1>
+						</div>
+						<div>
+							<p>Escriba en el cuadro abajo:</p>
+							<form>
+								<textarea class="handwrite" name="Text1" cols="40" rows="5" ></textarea>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="page">
+					<div class="page-content">
+						<div class="page-header">
+							<h1>Seleccionar</h1>
+						</div>
+						<form>
+							<p>Seleccione una opción:</p>
+								<input type="radio" name="gender" value="male" checked> Male<br>
+								<input type="radio" name="gender" value="female"> Female<br>
+								<input type="radio" name="gender" value="other"> Other
+							<p>Seleccione una opción del siguiente grupo:</p>
+								<input type="radio" name="pet" value="cat" checked> Cat<br>
+								<input type="radio" name="pet" value="dog"> Dog<br>
+								<input type="radio" name="pet" value="other"> Other
+							
+							<p>Seleccione várias opciones:</p>
+								<input type="checkbox" name="gender" value="male" checked> Male<br>
+								<input type="checkbox" name="gender" value="female"> Female<br>
+								<input type="checkbox" name="gender" value="other"> Other
+						</form>
+					</div>
+				</div>
+				<div class="page">
+					<div class="page-content">
+						<div class="page-header">
+							<h1>Video</h1>
+						</div>
+						<div class="text-center">
+							<p>Video en la página</p>
+							<iframe width="280" height="150" src="https://www.youtube.com/embed/QRa9On5_grA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="text-center">
+							<p>Video pop up</p>
+							<ul class="gallery clearfix">
+								<li><a href="https://www.youtube.com/watch?v=QRa9On5_grA" rel="prettyPhoto[galleryVideo]" title="YouTube demo"><img src="img/youtube.png" width="60" alt="" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="page">
+					<div class="page-content">
+						<div class="page-header">
+							<h1>Imagenes</h1>
+						</div>
+							<ul class="gallery clearfix">
+								<li><a href="img/kids2.jpg" rel="prettyPhoto[gallery1]" title="Descripción de la imagen"><img src="img/kids2.jpg"  width="60%" alt="Kids 2" /></a></li>
+								<li><a href="img/kids1.jpg" rel="prettyPhoto[gallery1]" title="Descripción de la imagen"><img src="img/kids1.jpg" width="60%" alt="Kids 1" /></a></li>
+							</ul>
+					</div>
+				</div>
+				<div class="hard back-side"></div>
+				<div class="hard" style="background-image:url(img/covers/back-cover.jpg)"></div>
+			</div>
+		</div>
+	</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/assets/js/docs.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- begin - TURN JS -->
+<script type="text/javascript">
+
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['turnjs/lib/turn.js'],
+	nope: ['turnjs/lib/turn.html4.min.js'],
+	both: ['css/style.css'],
+	complete: loadApp
+});
+
+</script>
+<!-- end - TURN JS -->
+
+<!-- PrettyPhoto -->
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+		social_tools: false
+	});
+  });
+</script>
+</body>
+</html>

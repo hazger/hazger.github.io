@@ -101,7 +101,7 @@ body{
 }
 
 /************* 
-	CSS made by Tiago
+	bookshelf
 **************/
 .grid{
 	padding: 150px 20px 100px 20px;
@@ -109,7 +109,14 @@ body{
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #b3b9bf;
 }
+
+.grid a {	
+	text-decoration: none;
+}
+
 .grid li {
 	display: inline-block;
 	width: 240px;
@@ -143,7 +150,7 @@ body{
 	color: #fff;
 }
 .grid figcaption span:before{
-	content: 'by '; /*escrito por*/
+	content: 'por '; /*todo: escrito por?*/
 }
 .grid figcaption a{
 	text-align: center;
@@ -174,29 +181,21 @@ body{
 	top: 30px;
 }
 
-
-/*reset*/
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.grid *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
 
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
+.grid .clearfix:before, .clearfix:after { content: " "; display: table; }
+.grid .clearfix:after { clear: both; }
 
-body {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #b3b9bf;
-	background: #fff;
-}
-
-a {	
-	text-decoration: none;
-}
-/*end of "reset"*/
+/***************************
+end of bookshelf
+****************************/
 
 /***************************
 start of the second bookshelf
 ****************************/
+/***************************
 .da-thumbs {
 	list-style: none;
 	width: 984px;
@@ -239,12 +238,7 @@ start of the second bookshelf
 	border-bottom: 1px solid rgba(255,255,255,0.5);
 	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
 }
-
+****************************/
 /***************************
 end of the second bookshelf
 ****************************/
-
-
-/************* 
-	End Of CSS made by Tiago
-**************/
